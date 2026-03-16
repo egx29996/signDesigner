@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Backer panel (slightly larger, offset for depth) -->
+  <g id="backer">
+    <rect x="3" y="3" width="200" height="200" rx="4" fill="#1a1a1a"/>
+  </g>
+  <!-- Face panel -->
+  <g id="face-fill">
+    <rect x="0" y="0" width="200" height="200" rx="4" fill="#3a3f47"/>
+  </g>
+  <!-- Accent bar -->
+  <g id="accent-bar">
+    <rect x="0" y="0" width="200" height="12" rx="4" fill="#c9a84c"/>
+    <rect x="0" y="4" width="200" height="8" fill="#c9a84c"/>
+  </g>
+  <!-- Pictogram slot -->
+  <g id="pictogram-slot">
+    <!-- Unisex restroom pictogram placeholder -->
+    <g transform="translate(100, 75)">
+      <!-- Male figure -->
+      <circle cx="-22" cy="-20" r="8" fill="#e8e0d0"/>
+      <rect x="-30" y="-10" width="16" height="28" rx="3" fill="#e8e0d0"/>
+      <rect x="-30" y="18" width="6" height="18" rx="2" fill="#e8e0d0"/>
+      <rect x="-20" y="18" width="6" height="18" rx="2" fill="#e8e0d0"/>
+      <!-- Female figure -->
+      <circle cx="22" cy="-20" r="8" fill="#e8e0d0"/>
+      <rect x="14" y="-10" width="16" height="18" rx="3" fill="#e8e0d0"/>
+      <polygon points="10,8 34,8 28,26 16,26" fill="#e8e0d0"/>
+      <rect x="14" y="26" width="6" height="10" rx="2" fill="#e8e0d0"/>
+      <rect x="24" y="26" width="6" height="10" rx="2" fill="#e8e0d0"/>
+    </g>
+  </g>
+  <!-- Primary text -->
+  <g id="text-primary">
+    <text x="100" y="130" text-anchor="middle" dominant-baseline="central" font-size="18" font-family="Montserrat, sans-serif" fill="#e8e0d0" font-weight="600" letter-spacing="3">RESTROOM</text>
+  </g>
+  <!-- Braille zone -->
+  <g id="text-braille">
+    <g transform="translate(62, 158)">
+      <!-- Braille dots placeholder for RESTROOM -->
+      <circle cx="0" cy="0" r="2" fill="#e8e0d0"/>
+      <circle cx="0" cy="8" r="2" fill="#e8e0d0"/>
+      <circle cx="8" cy="0" r="2" fill="#e8e0d0"/>
+      <circle cx="8" cy="8" r="2" fill="#e8e0d0"/>
+      <circle cx="16" cy="0" r="2" fill="#e8e0d0"/>
+      <circle cx="24" cy="0" r="2" fill="#e8e0d0"/>
+      <circle cx="24" cy="8" r="2" fill="#e8e0d0"/>
+      <circle cx="32" cy="0" r="2" fill="#e8e0d0"/>
+      <circle cx="32" cy="8" r="2" fill="#e8e0d0"/>
+      <circle cx="40" cy="0" r="2" fill="#e8e0d0"/>
+      <circle cx="48" cy="0" r="2" fill="#e8e0d0"/>
+      <circle cx="48" cy="8" r="2" fill="#e8e0d0"/>
+      <circle cx="56" cy="0" r="2" fill="#e8e0d0"/>
+      <circle cx="56" cy="8" r="2" fill="#e8e0d0"/>
+      <circle cx="64" cy="0" r="2" fill="#e8e0d0"/>
+      <circle cx="64" cy="8" r="2" fill="#e8e0d0"/>
+    </g>
+  </g>
+</svg>

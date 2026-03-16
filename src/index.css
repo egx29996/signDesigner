@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface: #0C0F1A;
+  --color-surface-elevated: #111524;
+  --color-surface-hover: #1A1F35;
+  --color-border: rgba(255, 255, 255, 0.06);
+  --color-border-active: rgba(59, 130, 246, 0.4);
+  --color-text-primary: #E2E8F0;
+  --color-text-secondary: #94A3B8;
+  --color-text-muted: #64748B;
+  --color-text-label: #CBD5E1;
+  --color-accent: #3B82F6;
+  --color-accent-light: #60A5FA;
+  --color-accent-muted: #93C5FD;
+  --color-accent-bg: rgba(59, 130, 246, 0.15);
+  --color-accent-bg-strong: rgba(59, 130, 246, 0.2);
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-error: #EF4444;
+}
+
+body {
+  margin: 0;
+  background: var(--color-surface);
+  color: var(--color-text-primary);
+  font-family: 'DM Sans', 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.2); }
+
+/* Light theme overrides for Configurator Mode */
+[data-theme="light"] {
+  --color-surface: #ffffff;
+  --color-surface-elevated: #f9f8f6;
+  --color-surface-hover: #f0eeeb;
+  --color-text-primary: #1a1a1a;
+  --color-text-secondary: #666666;
+  --color-text-muted: #999999;
+  --color-text-label: #444444;
+  --color-border: #e5e5e5;
+  --color-border-active: #1a3c5e;
+  --color-accent: #1a3c5e;
+  --color-accent-light: #2a5a8e;
+  --color-accent-muted: #7a9bbe;
+  --color-accent-bg: rgba(26, 60, 94, 0.08);
+  --color-accent-bg-strong: rgba(26, 60, 94, 0.14);
+}
+
+[data-theme="light"] ::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.12); }
+[data-theme="light"] ::-webkit-scrollbar-thumb:hover { background: rgba(0,0,0,0.2); }

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Backer panel (slightly larger, offset for depth) -->
+  <g id="backer">
+    <rect x="3" y="3" width="200" height="200" rx="4" fill="#1a1a1a"/>
+  </g>
+  <!-- Face panel -->
+  <g id="face-fill">
+    <rect x="0" y="0" width="200" height="200" rx="4" fill="#3a3f47"/>
+  </g>
+  <!-- Accent bar -->
+  <g id="accent-bar">
+    <rect x="0" y="0" width="200" height="12" rx="4" fill="#c9a84c"/>
+    <!-- Bottom corners square since they connect to face -->
+    <rect x="0" y="4" width="200" height="8" fill="#c9a84c"/>
+  </g>
+  <!-- Room number insert background -->
+  <g id="insert-background">
+    <rect x="20" y="24" width="160" height="60" rx="2" fill="#f5f0e8"/>
+  </g>
+  <g id="text-room-number">
+    <!-- Placeholder - app will inject dynamic text here -->
+    <text x="100" y="62" text-anchor="middle" dominant-baseline="central" font-size="36" font-family="Montserrat, sans-serif" fill="#1a1a1a" font-weight="700">101</text>
+  </g>
+  <!-- Thin divider between room number and text -->
+  <rect x="30" y="96" width="140" height="1" fill="#c9a84c" opacity="0.5"/>
+  <!-- Primary text -->
+  <g id="text-primary">
+    <text x="100" y="115" text-anchor="middle" dominant-baseline="central" font-size="18" font-family="Montserrat, sans-serif" fill="#e8e0d0" font-weight="600" letter-spacing="3">CONFERENCE</text>
+  </g>
+  <!-- Braille zone -->
+  <g id="text-braille">
+    <g transform="translate(60, 145)">
+      <!-- Braille dots placeholder pattern -->
+      <circle cx="0" cy="0" r="2" fill="#e8e0d0"/>
+      <circle cx="8" cy="0" r="2" fill="#e8e0d0"/>
+      <circle cx="16" cy="0" r="2" fill="#e8e0d0"/>
+      <circle cx="24" cy="0" r="2" fill="#e8e0d0"/>
+      <circle cx="0" cy="8" r="2" fill="#e8e0d0"/>
+      <circle cx="16" cy="8" r="2" fill="#e8e0d0"/>
+      <circle cx="32" cy="0" r="2" fill="#e8e0d0"/>
+      <circle cx="40" cy="0" r="2" fill="#e8e0d0"/>
+      <circle cx="32" cy="8" r="2" fill="#e8e0d0"/>
+      <circle cx="48" cy="0" r="2" fill="#e8e0d0"/>
+      <circle cx="48" cy="8" r="2" fill="#e8e0d0"/>
+      <circle cx="56" cy="0" r="2" fill="#e8e0d0"/>
+      <circle cx="64" cy="0" r="2" fill="#e8e0d0"/>
+      <circle cx="56" cy="8" r="2" fill="#e8e0d0"/>
+      <circle cx="64" cy="8" r="2" fill="#e8e0d0"/>
+    </g>
+  </g>
+</svg>
