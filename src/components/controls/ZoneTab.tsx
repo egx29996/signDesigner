@@ -39,7 +39,7 @@ interface SortableZoneItemProps {
   onToggleVisible: (zoneId: string, visible: boolean) => void;
 }
 
-function SortableZoneItem({ zone, signTypeId, onToggleVisible }: SortableZoneItemProps) {
+function SortableZoneItem({ zone, signTypeId: _signTypeId, onToggleVisible }: SortableZoneItemProps) {
   const { attributes, listeners, setNodeRef, transform, transition } =
     useSortable({ id: zone.id, disabled: zone.locked });
 

@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 import { useColorStore } from '../../stores/color-store';
-import { ColorSwatch } from './ColorSwatch';
 import type { ColorEntry } from '../../types/tokens';
 
 interface PaintBrandSearchProps {

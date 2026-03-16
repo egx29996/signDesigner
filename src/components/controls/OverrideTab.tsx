@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { usePackageStore } from '../../stores/package-store';
 import { useEditorStore } from '../../stores/editor-store';
 import { CURATED_COLORS } from '../../lib/color-utils';

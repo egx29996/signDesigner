@@ -5,7 +5,7 @@ import { getDefaultZones } from '../../../lib/sign-type-defaults';
 import { usePackageStore } from '../../../stores/package-store';
 import { useConfiguratorStore } from '../../../stores/configurator-store';
 import { SignRenderer } from '../../svg/SignRenderer';
-import type { SignTypeState, DesignTokens } from '../../../types';
+import type { SignTypeState } from '../../../types';
 
 // ---------------------------------------------------------------------------
 // Tier badge colors
