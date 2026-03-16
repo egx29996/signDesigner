@@ -51,11 +51,11 @@ export const Configurator: React.FC = () => {
   return (
     <div
       data-theme="light"
-      className="min-h-screen flex flex-col bg-white text-gray-900"
+      className="h-screen flex flex-col bg-white text-gray-900 overflow-hidden"
       style={{ fontFamily: "'DM Sans', system-ui, sans-serif" }}
     >
       {/* ---- Top bar ---- */}
-      <header className="flex items-center justify-between px-6 py-3 border-b border-gray-200 bg-white z-20">
+      <header className="flex-shrink-0 flex items-center justify-between px-6 py-3 border-b border-gray-200 bg-white z-20">
         {/* Logo / brand */}
         <div className="flex items-center gap-3">
           <span
@@ -71,8 +71,8 @@ export const Configurator: React.FC = () => {
           )}
         </div>
 
-        {/* Step indicator (center) */}
-        <div className="absolute left-1/2 -translate-x-1/2 hidden md:flex items-center gap-1.5 text-sm">
+        {/* Step indicator (center — visible on mobile too) */}
+        <div className="flex items-center gap-1.5 text-sm">
           <span className="font-semibold text-gray-900">
             {currentStep.label}
           </span>
@@ -91,23 +91,28 @@ export const Configurator: React.FC = () => {
         </button>
       </header>
 
-      {/* ---- Hero (sign preview) ---- */}
-      <SignHero />
+      {/* ---- Split layout: preview left, options right ---- */}
+      <div className="flex-1 flex flex-col lg:flex-row min-h-0">
+        {/* Sign preview — always visible, takes remaining space on desktop */}
+        <div className="h-[30vh] lg:h-auto lg:flex-1 flex-shrink-0">
+          <SignHero />
+        </div>
 
-      {/* ---- Step content area ---- */}
-      <div className="border-t border-gray-100 bg-white">
-        <div
-          className={`max-w-4xl mx-auto px-6 py-6 transition-all duration-200 ease-out ${contentClasses}`}
-        >
-          {(() => {
-            const StepComponent = STEP_COMPONENTS[currentStep.id];
-            return StepComponent ? <StepComponent /> : null;
-          })()}
+        {/* Options panel — scrollable, fixed width on desktop */}
+        <div className="flex-1 lg:w-[440px] lg:max-w-[480px] lg:flex-none flex flex-col border-l border-gray-200 bg-white min-h-0">
+          <div
+            className={`flex-1 overflow-y-auto px-5 py-5 transition-all duration-200 ease-out ${contentClasses}`}
+          >
+            {(() => {
+              const StepComponent = STEP_COMPONENTS[currentStep.id];
+              return StepComponent ? <StepComponent /> : null;
+            })()}
+          </div>
+
+          {/* Navigation pinned to bottom of options panel */}
+          <StepNav />
         </div>
       </div>
-
-      {/* ---- Bottom navigation ---- */}
-      <StepNav />
     </div>
   );
 };

@@ -29,7 +29,7 @@ export const SignHero: React.FC = () => {
   if (!activeSign) {
     return (
       <div
-        className="flex-1 flex items-center justify-center"
+        className="w-full h-full flex items-center justify-center"
         style={{ backgroundColor: '#f5f3f0' }}
       >
         <p className="text-gray-400 text-sm">Select a sign family to begin</p>
@@ -42,7 +42,7 @@ export const SignHero: React.FC = () => {
 
   return (
     <div
-      className="flex-1 flex flex-col items-center justify-center relative overflow-hidden"
+      className="w-full h-full flex flex-col items-center justify-center relative overflow-hidden"
       style={{ backgroundColor: '#f5f3f0' }}
     >
       {/* Sign preview */}
